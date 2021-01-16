@@ -431,66 +431,6 @@ svg {
 /* ======= */
 /* Modules */
 /* ======= */
-.wrapper {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 255px;
-  padding-bottom: 282px; }
-  .wrapper::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -63px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: url("../img/bg/bg-bike-desktop@1x.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #131314;
-    z-index: -1; }
-
-@media (-webkit-max-device-pixel-ratio: 2), (max-resolution: 2dppx) {
-  .wrapper::before {
-    background-image: url("../img/bg/bg-bike-desktop@2x.jpg"); } }
-
-@media (max-width: 1023px) {
-  .wrapper {
-    padding-top: 54px;
-    padding-bottom: 50px; }
-    .wrapper::before {
-      top: -50px;
-      height: 49.8%;
-      background: url("../img/bg/bg-bike-tablet@1x.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-color: #131314; } }
-
-@media (max-width: 1023px) and (-webkit-max-device-pixel-ratio: 2), (max-width: 1023px) and (max-resolution: 2dppx) {
-  .wrapper::before {
-    background-image: url("../img/bg/bg-bike-tablet@2x.jpg"); } }
-
-@media (max-width: 767px) {
-  .wrapper {
-    padding-top: 40px; }
-    .wrapper::before {
-      height: 52%;
-      background: url("../img/bg/bg-bike-mobile@1x.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-color: #131314; } }
-
-@media (max-width: 767px) and (-webkit-max-device-pixel-ratio: 2), (max-width: 767px) and (max-resolution: 2dppx) {
-  .wrapper::before {
-    background-image: url("../img/bg/bg-bike-mobile@2x.jpg"); } }
-
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -645,6 +585,66 @@ svg {
     width: 100%; }
   .main-nav__logo {
     margin-left: 17px; } }
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 255px;
+  padding-bottom: 282px; }
+  .wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -63px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg/bg-bike-desktop@1x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #131314;
+    z-index: -1; }
+
+@media (-webkit-max-device-pixel-ratio: 2), (max-resolution: 2dppx) {
+  .wrapper::before {
+    background-image: url("../img/bg/bg-bike-desktop@2x.jpg"); } }
+
+@media (max-width: 1023px) {
+  .wrapper {
+    padding-top: 54px;
+    padding-bottom: 50px; }
+    .wrapper::before {
+      top: -50px;
+      height: 49.8%;
+      background: url("../img/bg/bg-bike-tablet@1x.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #131314; } }
+
+@media (max-width: 1023px) and (-webkit-max-device-pixel-ratio: 2), (max-width: 1023px) and (max-resolution: 2dppx) {
+  .wrapper::before {
+    background-image: url("../img/bg/bg-bike-tablet@2x.jpg"); } }
+
+@media (max-width: 767px) {
+  .wrapper {
+    padding-top: 40px; }
+    .wrapper::before {
+      height: 52%;
+      background: url("../img/bg/bg-bike-mobile@1x.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #131314; } }
+
+@media (max-width: 767px) and (-webkit-max-device-pixel-ratio: 2), (max-width: 767px) and (max-resolution: 2dppx) {
+  .wrapper::before {
+    background-image: url("../img/bg/bg-bike-mobile@2x.jpg"); } }
 
 .intro {
   width: 43%;
