@@ -1,0 +1,161 @@
+.contacts {
+  max-width: $desktop-max-width;
+  margin: 0 auto;
+  padding: 127px 241px 69px 242px;
+}
+
+.contacts h2 {
+  @include typography(30, 30);
+
+  margin-right: 10px;
+  margin-bottom: 29px;
+  font-weight: 600;
+  color: $dark-gray;
+  text-align: center;
+}
+
+.contacts address {
+  @include typography(17, 31);
+
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-right: 13px;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  color: rgba($black, 0.7);
+  letter-spacing: normal;
+}
+
+.contacts__map-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.contacts__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 55.2%;
+  min-width: 455px;
+  margin: 0 auto;
+  margin-top: 34px;
+}
+
+.contacts__item {
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--letter {
+    margin-left: -18px;
+  }
+}
+
+.contacts__link {
+  @include typography(16, 22);
+
+  position: relative;
+  padding-left: 41px;
+  font-weight: normal;
+  color: rgba($black, 0.5);
+  letter-spacing: normal;
+
+  &--letter svg {
+    left: 0;
+    top: 2px;
+  }
+
+  &--phone svg {
+    left: 5px;
+    top: -2px;
+  }
+}
+
+.contacts__link svg {
+  position: absolute;
+  fill: none;
+}
+
+@media (max-width: $tablet-max-width) {
+  .contacts {
+    width: 100%;
+    padding: 50px 4.56% 24px;
+  }
+
+  .contacts h2 {
+    @include typography(24, 30);
+
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contacts address {
+    width: auto;
+    margin-left: 12px;
+    margin-bottom: 20px;
+  }
+
+  .contacts__list {
+    width: 100%;
+    min-width: auto;
+    margin-top: 16px;
+    padding-left: 10%;
+    padding-right: 11.7%;
+  }
+
+  .contacts__item--letter {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .contacts {
+    width: 100%;
+    padding: 55px 0 16px;
+  }
+
+  .contacts h2 {
+    @include typography(18, 30);
+  }
+
+  .contacts address {
+    margin-left: 0;
+    margin-bottom: 19px;
+    padding: 0 7.81%;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+    padding-left: 7.2%;
+    padding-right: 5%;
+  }
+
+  .contacts__item {
+    margin-right: 0;
+    margin-bottom: 15px;
+
+    &--phone {
+      margin-left: -24px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__link {
+    &--phone svg {
+      left: 4px;
+      top: -4px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.intro {
+  width: 43%;
+  margin-left: 78px;
+  padding-left: 14%;
+}
+
+.intro__logo {
+  width: 68px;
+  height: 21px;
+  pointer-events: none;
+}
+
+.intro h1 {
+  @include typography(46, 64);
+
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: $white;
+}
+
+.intro p {
+  @include typography(20, 32);
+
+  margin-top: 25px;
+  font-weight: 300;
+  color: rgba($white, 0.8);
+}
+
+@media (max-width: $tablet-max-width) {
+  .intro {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 166px 65px;
+    text-align: center;
+  }
+
+  .intro__logo {
+    display: none;
+  }
+
+  .intro h1 {
+    @include typography(30, 42);
+  }
+
+  .intro p {
+    @include typography(18, 32);
+
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .intro {
+    width: 100%;
+    padding: 0 5% 54px;
+  }
+
+  .intro h2 {
+    margin-bottom: 20px;
+  }
+}

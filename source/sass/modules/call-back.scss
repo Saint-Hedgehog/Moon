@@ -1,0 +1,118 @@
+.call-back {
+  width: 38%;
+  min-width: 443px;
+  margin-right: 4.12%;
+  margin-left: auto;
+  padding-right: 15.3%;
+}
+
+.call-back p {
+  @include typography(17, 28);
+
+  margin-top: 4px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: $white;
+}
+
+.call-back fieldset {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  border: none;
+}
+
+.call-back input {
+  @include typography(15, 24);
+  @include transition;
+
+  width: 100%;
+  padding: 14px 10px 8px 30px;
+  color: $black;
+  border: 1px solid $grayish-blue;
+  border-radius: 6px;
+
+  &:hover,
+  &:focus {
+    background-color: $light-gray;
+  }
+
+  &::placeholder {
+    color: rgba($darken-gray, 0.5);
+  }
+}
+
+.call-back__send {
+  @include typography(15, 21);
+  @include button-reset;
+  @include transition;
+
+  width: 100%;
+  padding: 15px 8px;
+  font-weight: 600;
+  background-color: $accent;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $lighten-cyan;
+  }
+
+  &:active {
+    background-color: $darken-cyan;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .call-back {
+    width: 100%;
+    min-width: auto;
+    margin-right: 0;
+    padding: 63px 223px 0;
+  }
+
+  .call-back p {
+    @include typography(18, 28);
+
+    margin-bottom: 30px;
+    color: $black;
+  }
+
+  .call-back form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .call-back input {
+    width: 321px;
+    padding: 12px 10px 10px 20px;
+  }
+
+  .call-back__send {
+    width: 321px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .call-back {
+    width: 100%;
+    padding: 64px 5% 0;
+  }
+
+  .call-back p {
+    margin-bottom: 20px;
+  }
+
+  .call-back input {
+    width: 288px;
+    padding-left: 25px;
+  }
+
+  .call-back__send {
+    width: 286px;
+    margin-top: -1px;
+  }
+}
