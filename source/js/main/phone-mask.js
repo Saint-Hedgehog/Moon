@@ -43,9 +43,12 @@
       }
     }
     const input = document.querySelector('[name="tel"]');
-    input.addEventListener('input', mask, false);
-    input.addEventListener('focus', mask, false);
-    input.addEventListener('blur', mask, false);
+    if (input) {
+      input.addEventListener('input', mask, false);
+      input.addEventListener('focus', mask, false);
+      input.addEventListener('blur', mask, false);
+    }
+
   });
 
 })();

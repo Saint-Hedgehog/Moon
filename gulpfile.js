@@ -16,7 +16,6 @@ const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const concat = require("gulp-concat");
-const minify = require('gulp-minify');
 
 // Clean
 const clean = () => {
@@ -30,7 +29,6 @@ const copy = () => {
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
     '!source/img/sprite/*.svg',
-    'source//*.ico'
   ], {
     base: "source"
   })
@@ -78,7 +76,6 @@ exports.css = css;
 const jsMain = () => {
   return gulp.src("source/js/main/*.js")
       .pipe(concat("main.js"))
-      .pipe(minify())
       .pipe(gulp.dest("build/js"))
       .pipe(browserSync.stream());
 }
@@ -88,7 +85,6 @@ exports.jsMain = jsMain;
 const jsVendor = () => {
   return gulp.src("source/js/vendor/*.js")
       .pipe(concat("vendor.js"))
-      .pipe(minify())
       .pipe(gulp.dest("build/js"))
       .pipe(browserSync.stream());
 }

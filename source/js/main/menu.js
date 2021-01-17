@@ -7,13 +7,15 @@
   const menu = document.querySelector('.main-nav');
   const body = document.querySelector('.body');
 
-  header.classList.remove('header--no-js');
-  menu.classList.remove('main-nav--no-js');
-  menuButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    menu.classList.toggle('main-nav--closed');
-    body.classList.toggle('body--overflow');
-  });
+  if (header && menuButton && menu && body) {
+    header.classList.remove('header--no-js');
+    menu.classList.remove('main-nav--no-js');
+    menuButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      menu.classList.toggle('main-nav--closed');
+      body.classList.toggle('body--overflow');
+    });
+  }
 
   const anchors = document.querySelectorAll('a[href*=\\#]:not([href=\\#])');
 

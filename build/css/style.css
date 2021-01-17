@@ -1,7 +1,6 @@
 /* ======= */
 /* Helpers */
 /* ======= */
-/* stylelint-disable */
 /* ====== */
 /* Vendor */
 /* ====== */
@@ -412,22 +411,6 @@ svg {
 /* ========== */
 /* Components */
 /* ========== */
-.button {
-  display: block;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: 0;
-  transition: all 0.2s ease-in;
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  cursor: pointer; }
-  .button:hover, .button:focus {
-    opacity: 0.7; }
-  .button:active {
-    opacity: 0.3; }
-
 /* ======= */
 /* Modules */
 /* ======= */
@@ -468,19 +451,19 @@ svg {
     color: rgba(255, 255, 255, 0.3); }
 
 @media (max-width: 1023px) {
+  .main-nav .main-nav__menu {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-width: 320px;
+    height: 100vh; }
+  .main-nav .main-nav__toggle-open {
+    display: none; }
   .main-nav {
     width: 100%;
     padding: 0; }
-    .main-nav .main-nav__menu {
-      position: fixed;
-      z-index: 10;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      min-width: 320px;
-      height: 100vh; }
-    .main-nav .main-nav__toggle-open {
-      display: none; }
     .main-nav--closed .main-nav__toggle-open {
       display: block; }
     .main-nav--closed .main-nav__toggle {
@@ -526,14 +509,14 @@ svg {
     background-color: #ffffff;
     border-style: none;
     cursor: pointer; }
-    .main-nav__toggle svg {
-      position: absolute;
-      left: 13px;
-      top: 15px; }
     .main-nav__toggle:hover, .main-nav__toggle:focus {
       background-color: #5fd0c6; }
     .main-nav__toggle:active {
       background-color: #10a597; }
+  .main-nav__toggle svg {
+    position: absolute;
+    left: 13px;
+    top: 15px; }
   .main-nav__menu {
     margin: 0;
     padding: 0;

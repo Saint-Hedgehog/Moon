@@ -33,7 +33,7 @@
   &:nth-child(3n+1) {
     margin-top: 35px;
 
-    & .types__img-wrapper::before {
+    .types__img-wrapper::before {
       @include pseudo;
 
       top: calc(50% - 95.5px);
@@ -49,8 +49,8 @@
   &:nth-child(3n-1) {
     margin-top: 64px;
 
-    & .types__img-wrapper::before,
-    & .types__img-wrapper::after {
+    .types__img-wrapper::before,
+    .types__img-wrapper::after {
       @include pseudo;
 
       width: 47px;
@@ -58,12 +58,12 @@
       border: 8px solid $accent;
     }
 
-    & .types__img-wrapper::before {
+    .types__img-wrapper::before {
       left: -18.5px;
       top: -17.5px;
     }
 
-    & .types__img-wrapper::after {
+    .types__img-wrapper::after {
       right: -22.5px;
       bottom: -23.5px;
     }
@@ -72,7 +72,7 @@
   &:nth-child(3n) {
     margin-top: 25px;
 
-    & .types__img-wrapper::before {
+    .types__img-wrapper::before {
       @include pseudo;
 
       top: -32px;
