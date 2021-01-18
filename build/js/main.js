@@ -7,21 +7,36 @@
   const menu = document.querySelector('.main-nav');
   const body = document.querySelector('.body');
 
+  const xx = function () {
+
+    if (window.innerWidth < 1024 && !body.classList.contains('body--overflow')) {
+      body.classList.add('body--overflow');
+    }
+
+    if (window.innerWidth >= 1024 && body.classList.contains('body--overflow')) {
+      body.classList.remove('body--overflow');
+    }
+  };
+
   if (header && menuButton && menu && body) {
     header.classList.remove('header--no-js');
     menu.classList.remove('main-nav--no-js');
     menuButton.addEventListener('click', function (evt) {
       evt.preventDefault();
       menu.classList.toggle('main-nav--closed');
-      if (window.innerWidth < 1024) {
-        body.classList.toggle('body--overflow');
-      }
 
-      if (window.innerWidth >= 1024 && body.classList.contains('body--overflow')) {
-        body.classList.remove('body--overflow');
+      if(menu.classList.contains('main-nav--closed')) {
+        window.removeEventListener('resize', xx);
+      } else {
+        window.addEventListener('resize', xx);
       }
+      body.classList.toggle('body--overflow');
     });
   }
+
+
+
+
 
   const anchors = document.querySelectorAll('a[href*=\\#]:not([href=\\#])');
 
@@ -35,13 +50,11 @@
         behavior: 'smooth',
         block: 'start'
       });
-      menu.classList.toggle('main-nav--closed');
-      if (window.innerWidth < 1024) {
-        body.classList.toggle('body--overflow');
-      }
 
-      if (window.innerWidth >= 1024 && body.classList.contains('body--overflow')) {
+      if (window.innerWidth < 1024) {
+        menu.classList.add('main-nav--closed');
         body.classList.remove('body--overflow');
+        window.removeEventListener('resize', xx);
       }
     });
   }
