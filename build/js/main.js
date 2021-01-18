@@ -7,7 +7,7 @@
   const menu = document.querySelector('.main-nav');
   const body = document.querySelector('.body');
 
-  const xx = function () {
+  const resize = function () {
 
     if (window.innerWidth < 1024 && !body.classList.contains('body--overflow')) {
       body.classList.add('body--overflow');
@@ -26,17 +26,13 @@
       menu.classList.toggle('main-nav--closed');
 
       if(menu.classList.contains('main-nav--closed')) {
-        window.removeEventListener('resize', xx);
+        window.removeEventListener('resize', resize);
       } else {
-        window.addEventListener('resize', xx);
+        window.addEventListener('resize', resize);
       }
       body.classList.toggle('body--overflow');
     });
   }
-
-
-
-
 
   const anchors = document.querySelectorAll('a[href*=\\#]:not([href=\\#])');
 
@@ -54,7 +50,7 @@
       if (window.innerWidth < 1024) {
         menu.classList.add('main-nav--closed');
         body.classList.remove('body--overflow');
-        window.removeEventListener('resize', xx);
+        window.removeEventListener('resize', resize);
       }
     });
   }
