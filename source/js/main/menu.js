@@ -13,7 +13,13 @@
     menuButton.addEventListener('click', function (evt) {
       evt.preventDefault();
       menu.classList.toggle('main-nav--closed');
-      body.classList.toggle('body--overflow');
+      if (window.innerWidth < 1024) {
+        body.classList.toggle('body--overflow');
+      }
+
+      if (window.innerWidth >= 1024 && body.classList.contains('body--overflow')) {
+        body.classList.remove('body--overflow');
+      }
     });
   }
 
@@ -30,7 +36,13 @@
         block: 'start'
       });
       menu.classList.toggle('main-nav--closed');
-      body.classList.toggle('body--overflow');
+      if (window.innerWidth < 1024) {
+        body.classList.toggle('body--overflow');
+      }
+
+      if (window.innerWidth >= 1024 && body.classList.contains('body--overflow')) {
+        body.classList.remove('body--overflow');
+      }
     });
   }
 

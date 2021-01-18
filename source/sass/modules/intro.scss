@@ -30,7 +30,7 @@
   .intro {
     width: 100%;
     margin: 0 auto;
-    padding: 0 166px 65px;
+    padding: 0 166px 33px;
     text-align: center;
   }
 
@@ -45,6 +45,7 @@
   .intro p {
     @include typography(18, 32);
 
+    min-height: 96px;
     margin-top: 20px;
   }
 }
