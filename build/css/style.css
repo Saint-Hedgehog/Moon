@@ -373,7 +373,8 @@ template {
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
-  letter-spacing: -0.005em; }
+  letter-spacing: -0.005em;
+  overflow-x: hidden; }
   .body--overflow {
     overflow: hidden; }
 
