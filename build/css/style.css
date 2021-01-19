@@ -688,7 +688,7 @@ svg {
 
 .call-back {
   width: 38%;
-  min-width: 443px;
+  min-width: 420px;
   margin-right: 4.12%;
   margin-left: auto;
   padding-right: 15.3%; }
@@ -713,7 +713,7 @@ svg {
   line-height: 1.5rem;
   transition: all 0.2s ease-in;
   width: 100%;
-  padding: 14px 10px 8px 30px;
+  padding: 14px 10px 8px 8.5%;
   color: #000000;
   border: 1px solid #c9ccd4;
   border-radius: 6px; }
