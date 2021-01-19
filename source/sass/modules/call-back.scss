@@ -1,9 +1,9 @@
 .call-back {
-  width: 38%;
+  width: 36%;
   min-width: 420px;
-  margin-right: 4.12%;
+  margin-right: 78px;
   margin-left: auto;
-  padding-right: 15.3%;
+  padding-right: 13%;
 }
 
 .call-back p {
@@ -65,12 +65,19 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .call-back {
+    min-width: 335px;
+    padding-right: 7%;
+  }
+}
+
 @media (max-width: $tablet-max-width) {
   .call-back {
     width: 100%;
     min-width: auto;
     margin-right: 0;
-    padding: 63px 223px 0;
+    padding: 63px 224px 0;
   }
 
   .call-back p {

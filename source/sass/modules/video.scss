@@ -2,7 +2,7 @@
   position: relative;
   max-width: $desktop-max-width;
   margin: 0 auto;
-  padding: 121px 255px 0 256px;
+  padding: 121px 238px 0 256px;
 
   &::before {
     @include pseudo;
@@ -78,7 +78,7 @@
     padding: 70px 17.32% 0;
 
     &::before {
-      height: 83%;
+      height: 82.8%;
     }
   }
 

@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 101.2%;
   min-height: 825px;
   background: url("../img/bg/bg-bike-desktop@1x.jpg");
   background-size: cover;
@@ -28,6 +28,7 @@
   max-width: $desktop-max-width;
   margin: 0 auto;
   padding-top: 21px;
+  padding-left: 17px;
 }
 
 .main-nav__logo {
@@ -45,7 +46,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 60.63%;
+  width: 62.1%;
   margin: 0 auto;
   padding: 0 22px 9px 19px;
   border-bottom: 1px solid rgba($white, 0.2);

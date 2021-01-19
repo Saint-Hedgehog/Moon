@@ -421,7 +421,7 @@ svg {
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 101.2%;
   min-height: 825px;
   background: url("../img/bg/bg-bike-desktop@1x.jpg");
   background-size: cover;
@@ -441,7 +441,8 @@ svg {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 21px; }
+  padding-top: 21px;
+  padding-left: 17px; }
 
 .main-nav__logo {
   display: none; }
@@ -457,7 +458,7 @@ svg {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 60.63%;
+  width: 62.1%;
   margin: 0 auto;
   padding: 0 22px 9px 19px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
@@ -641,7 +642,7 @@ svg {
 .intro {
   width: 43%;
   margin-left: 78px;
-  padding-left: 14%; }
+  padding-left: 14.2%; }
 
 .intro__logo {
   width: 68px;
@@ -661,6 +662,11 @@ svg {
   margin-top: 25px;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8); }
+
+@media (max-width: 1200px) {
+  .intro {
+    width: 38%;
+    padding-left: 7%; } }
 
 @media (max-width: 1023px) {
   .intro {
@@ -687,11 +693,11 @@ svg {
     margin-bottom: 20px; } }
 
 .call-back {
-  width: 38%;
+  width: 36%;
   min-width: 420px;
-  margin-right: 4.12%;
+  margin-right: 78px;
   margin-left: auto;
-  padding-right: 15.3%; }
+  padding-right: 13%; }
 
 .call-back p {
   font-size: 1.0625rem;
@@ -744,12 +750,17 @@ svg {
   .call-back__send:active {
     background-color: #10a597; }
 
+@media (max-width: 1200px) {
+  .call-back {
+    min-width: 335px;
+    padding-right: 7%; } }
+
 @media (max-width: 1023px) {
   .call-back {
     width: 100%;
     min-width: auto;
     margin-right: 0;
-    padding: 63px 223px 0; }
+    padding: 63px 224px 0; }
   .call-back p {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -788,6 +799,7 @@ svg {
   font-size: 1.875rem;
   line-height: 1.875rem;
   margin-bottom: 22px;
+  padding-left: 17px;
   font-weight: 600;
   text-align: center;
   color: #1f1f1f; }
@@ -799,7 +811,7 @@ svg {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 9.51%; }
+  padding: 0 8.51% 0 9.6%; }
 
 .features__item {
   max-width: 263px;
@@ -840,7 +852,8 @@ svg {
     font-size: 1.5rem;
     line-height: 2.5625rem;
     margin-left: 0;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding-left: 0; }
   .features__list {
     flex-wrap: wrap;
     padding-left: 13.9%;
@@ -893,6 +906,7 @@ svg {
   font-size: 1.875rem;
   line-height: 1.875rem;
   margin-top: 0;
+  padding-left: 17px;
   font-weight: 600;
   text-align: center;
   color: #1f1f1f; }
@@ -904,7 +918,7 @@ svg {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 10.903%; }
+  padding: 0 9.8% 0 11%; }
 
 .types__item {
   width: 30.4%; }
@@ -944,7 +958,7 @@ svg {
       display: block;
       position: absolute;
       top: -32px;
-      right: -36px;
+      right: -35px;
       width: 95px;
       height: 95px;
       border: 17px solid #0ad9c6;
@@ -974,7 +988,8 @@ svg {
     font-size: 1.5rem;
     line-height: 2.5625rem;
     margin-right: 0;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding-left: 0; }
   .types__list {
     justify-content: center;
     padding: 0; }
@@ -996,7 +1011,7 @@ svg {
       display: none; }
     .types__item:nth-child(3n) .types__img-wrapper::before {
       top: -20px;
-      right: -25px;
+      right: -24px;
       z-index: 1;
       width: 68px;
       height: 68px;
@@ -1039,7 +1054,7 @@ svg {
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 121px 255px 0 256px; }
+  padding: 121px 238px 0 256px; }
   .video::before {
     content: "";
     display: block;
@@ -1105,7 +1120,7 @@ svg {
     width: 100%;
     padding: 70px 17.32% 0; }
     .video::before {
-      height: 83%; }
+      height: 82.8%; }
   .video h2 {
     font-size: 1.5rem;
     line-height: 1.875rem;
@@ -1153,7 +1168,7 @@ svg {
 .contacts {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 127px 241px 69px 242px; }
+  padding: 127px 224px 69px 242px; }
 
 .contacts h2 {
   font-size: 1.875rem;
@@ -1212,7 +1227,7 @@ svg {
     left: 0;
     top: 2px; }
   .contacts__link--phone svg {
-    left: 5px;
+    left: 4px;
     top: -2px; }
 
 .contacts__link svg {
@@ -1235,7 +1250,7 @@ svg {
   .contacts__list {
     width: 100%;
     min-width: auto;
-    margin-top: 16px;
+    margin-top: 15px;
     padding-left: 10%;
     padding-right: 11.7%; }
   .contacts__item--letter {

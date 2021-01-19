@@ -1,7 +1,7 @@
 .intro {
   width: 43%;
   margin-left: 78px;
-  padding-left: 14%;
+  padding-left: 14.2%;
 }
 
 .intro__logo {
@@ -24,6 +24,14 @@
   margin-top: 25px;
   font-weight: 300;
   color: rgba($white, 0.8);
+}
+
+
+@media (max-width: 1200px) {
+  .intro {
+    width: 38%;
+    padding-left: 7%;
+  }
 }
 
 @media (max-width: $tablet-max-width) {
