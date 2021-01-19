@@ -1,7 +1,5 @@
 .video {
   position: relative;
-  max-width: $desktop-max-width;
-  margin: 0 auto;
   padding: 121px 238px 0 256px;
 
   &::before {
@@ -44,6 +42,7 @@
 .video__wrapper img {
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 .video__play {

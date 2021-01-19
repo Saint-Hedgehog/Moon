@@ -373,8 +373,7 @@ template {
   font-size: 16px;
   line-height: 32px;
   font-weight: 400;
-  letter-spacing: -0.005em;
-  overflow-x: hidden; }
+  letter-spacing: -0.005em; }
   .body--overflow {
     overflow: hidden; }
 
@@ -422,11 +421,10 @@ svg {
   top: 0;
   left: 0;
   right: 0;
-  width: 101.2%;
+  width: 100%;
   min-height: 825px;
   background: url("../img/bg/bg-bike-desktop@1x.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-color: #131314;
   z-index: -1; }
@@ -627,6 +625,7 @@ svg {
   flex-wrap: wrap;
   align-items: flex-start;
   width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding-top: 255px;
   padding-bottom: 282px; }
@@ -1053,8 +1052,6 @@ svg {
 
 .video {
   position: relative;
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 121px 238px 0 256px; }
   .video::before {
     content: "";
@@ -1091,7 +1088,8 @@ svg {
 
 .video__wrapper img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  margin: 0 auto; }
 
 .video__play {
   display: block;
